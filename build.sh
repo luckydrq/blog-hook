@@ -1,7 +1,7 @@
 #!bin/bash
 
-declare -r local_repo=$HOME/workspace/blog
 declare -r remote_branch=luckydrq.com
+declare -r local_repo=$HOME/workspace/blog/$remote_branch
 
 cd $local_repo
 
