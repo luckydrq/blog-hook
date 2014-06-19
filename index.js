@@ -1,7 +1,6 @@
 var http = require('http');
-var isSupportGenerator = require('node-generator-detector')();
-var app = isSupportGenerator ? require('./lib/koa.js') : require('./lib/express.js');
-var port = app.get('port') || 3000;
+var app = require('node-generator-detector')() ? require('./lib/koa.js') : require('./lib/express.js');
+var port = app.get('port') || 7002;
 
 http.createServer(app)
   .listen(port)
