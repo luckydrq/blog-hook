@@ -1,4 +1,7 @@
-require('gnode');
+var supportGenerator = require('node-generator-detector')();
+if (!supportGenerator) {
+  require('gnode');
+}
 
 var http = require('http');
 var app = require('./lib/server.js');
