@@ -12,6 +12,7 @@
     "gnode": "0.0.8",
     "koa": "^0.8.0",
     "koa-logger": "^1.2.2",
+    "koa-route": "^1.1.4",
     "morgan": "^1.1.1",
     "node-generator-detector": "^0.2.0"
   },
